@@ -1,4 +1,4 @@
-# Algorithm
+# Algorithm Part
 
 ## Run Program
 
