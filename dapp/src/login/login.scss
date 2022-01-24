@@ -1,0 +1,19 @@
+@import "../index.scss";
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+
+    .login-button {
+      border: none;
+      width: 200px;
+      height: 50px;
+      border-radius: 40px;
+      font-weight: bolder;
+      background-color: $primary;
+      color: white;
+      font-size: 20px;
+    }
+}

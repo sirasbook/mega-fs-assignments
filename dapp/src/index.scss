@@ -1,0 +1,67 @@
+@import "antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+$bg-color: #15435d;
+$primary: #d7b062;
+$secondary: #113b4c;
+$box-border: #0d303d;
+$input-border: #cfcfd7;
+$btn-max: #fedc97;
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "Poppins", sans-serif;
+    background-color: $bg-color;
+    color: white;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+.flex-col {
+    display: flex;
+    flex-flow: column wrap;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.m-b-16 {
+    margin-bottom: 16px;
+}
+.m-t-50 {
+    margin-top: 50px;
+}
+.m-r-10 {
+    margin-right: 10px;
+}
+.m-r-20 {
+    margin-right: 20px;
+}
+.m-r-30 {
+    margin-right: 30px;
+}
+
+.ant-input {
+    text-align: right;
+    width: 200px;
+    border: none;
+    background-color: white;
+    border: 3px solid $primary;
+    border-radius: 10px;
+    &:hover {
+        border-color: $input-border;
+    }
+    &:focus {
+        border-color: $input-border;
+        box-shadow: 0 0 2px 1px $input-border;
+    }
+}
+
+.ant-notification {
+    top : 50px !important
+}

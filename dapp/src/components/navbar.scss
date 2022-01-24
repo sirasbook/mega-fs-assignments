@@ -1,0 +1,59 @@
+@import '../index.scss';
+
+.navbar-container {
+    width: 100%;
+    padding-top: 10px;
+    .height {
+        min-height: 55px;
+        max-height: 90px;
+    }
+    .desktop {
+        align-items: center;
+        .ant-menu {
+            background-color: $bg-color;
+        }
+        .ant-menu-item {
+            a{
+                color: white;
+                font-size: 16px;
+                font-weight: bolder;
+            }
+            a:hover {
+                color: $primary;
+            }
+            
+        }
+        .ant-menu-horizontal {
+            border: none;
+        }
+        .ant-menu-item-selected {
+            a{
+                color: $primary;
+            }
+            &::after {
+                border-bottom: none !important;
+            }
+        }
+        .addr {
+            font-size: 16px;
+            font-weight: bolder;
+            :hover {
+                border: none;
+            }
+        }
+        .right {
+            padding-right: 20px;
+            .logout {
+                color: white;
+                font-size: 16px;
+                font-weight: bolder;
+            }
+            a:hover{
+                color: $primary;
+            }
+        }
+    }
+    .ant-menu-horizontal > .ant-menu-item::after, .ant-menu-horizontal > .ant-menu-submenu::after {
+        border-bottom: none !important;
+    }
+}

@@ -1,0 +1,65 @@
+@import "../index.scss";
+
+.page {
+    padding: 50px 0;
+    .container {
+        display: flex;
+        justify-content: center;
+    
+        .box {
+            padding: 10px;
+            border: 2px solid $box-border;
+            border-radius: 20px;
+            width: 250px;
+            background-color: $secondary;
+        }
+    
+        .title {
+            font-weight: bolder;
+            font-size: 16px;
+            color: $primary;
+        }
+    
+        .supply {
+            background-color: $secondary;
+            padding: 20px;
+            border: 2px solid $box-border;
+            border-radius: 20px;
+    
+            .header {
+                font-weight: bolder;
+                font-size: 18px;
+                color: $primary;
+            }
+    
+            .balance {
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+            .currency {
+                padding: 10px;
+                background-color: $primary;
+                border-radius: 10px;
+                font-weight: bolder;
+            }
+    
+            .btn-max {
+                color: $btn-max;
+                font-weight: bolder;
+                font-size: 16px;
+            }
+    
+            .supply-button {
+                border: none;
+                width: 120px;
+                height: 35px;
+                border-radius: 40px;
+                font-weight: bolder;
+                background-color: $primary;
+                color: white;
+                font-size: 16px;
+            }
+        }
+    }
+}
