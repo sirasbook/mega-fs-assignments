@@ -7,6 +7,7 @@ export const connectWalletHandler = () => {
         .then(result => {
             sessionStorage.setItem("address", result[0]);
             getUserBalance(result[0])
+            Notification({type: 'success', message: 'Login success', duration: 2})
         })
     }else {
         return Notification({type: 'error', message: 'Login fail', desc: 'Please Install MetaMask', duration: 3})
