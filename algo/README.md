@@ -1,8 +1,8 @@
-# Algorithm
+# Algorithm Part
 
 ## Run Program
 
-### `python solution.py`
+### `python solution.py` or `python3 solution.py`
 
 ## Algorithm Description
 
