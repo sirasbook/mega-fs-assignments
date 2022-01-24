@@ -30,8 +30,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .m-b-16 {
     margin-bottom: 16px;
+}
+.m-t-20 {
+    margin-top: 20px;
 }
 .m-t-50 {
     margin-top: 50px;
