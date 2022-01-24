@@ -9,7 +9,7 @@ export const connectWalletHandler = () => {
             getUserBalance(result[0])
         })
     }else {
-        return Notification({type: 'error', message: 'Login fail', desc: 'Please Install MetaMask'})
+        return Notification({type: 'error', message: 'Login fail', desc: 'Please Install MetaMask', duration: 3})
     }
 }
 

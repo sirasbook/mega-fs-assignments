@@ -29,7 +29,7 @@ const Supply = () => {
         const _yourSupply = await getYourSupply(address)
         const _totalSupply = await getCash(address)
         
-        // Calculate APY
+        // Get this Calculate APY from compound finance docs
         const ethMantissa = 1e18;
         const blocksPerDay = 6570; // 15 seconds per block from rinkeby.io
         const daysPerYear = 365;
@@ -84,11 +84,11 @@ const Supply = () => {
                 if (result) {
                     fetchData()
                     setValue(null)
-                    Notification({type: 'success', message: 'Supply success', desc: `Successfully get ${parseFloat(result).toFixed(4)} cETH`})
+                    Notification({type: 'success', message: 'Supply success', desc: `Successfully get ${parseFloat(result).toFixed(4)} cETH`, duration: 3})
                 }
             }
         }else {
-            Notification({type: 'error', message: 'Input Error', desc: 'Input must be number'})
+            Notification({type: 'error', message: 'Input Error', desc: 'Input must be number', duration: 2})
         }
     }
 

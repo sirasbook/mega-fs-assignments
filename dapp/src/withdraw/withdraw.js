@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Button, Input } from 'antd';
 import "./withdraw.scss"
-import { getCETH, getYourSupply, redeem } from "../services/contract.service";
+import { getCETH, redeem } from "../services/contract.service";
 import { connectWalletHandler } from "../services/user.service";
 import Notification from '../components/notification'
 const Withdraw = () => {
@@ -11,7 +11,6 @@ const Withdraw = () => {
     }, [])
 
     const address = sessionStorage.getItem("address")
-    const balance = sessionStorage.getItem("balance")
 
     const [yourCETH, setYourCETH] = useState(null)
     const [value, setValue] = useState()
@@ -49,11 +48,11 @@ const Withdraw = () => {
                 if (result) {
                     fetchData()
                     setValue(null)
-                    Notification({type: 'success', message: 'Supply success', desc: `Successfully withdraw ${parseFloat(result).toFixed(4)} ETH`})
+                    Notification({type: 'success', message: 'Supply success', desc: `Successfully withdraw ${parseFloat(result).toFixed(4)} ETH`, duration: 3})
                 }
             }
         }else {
-            Notification({type: 'error', message: 'Input Error', desc: 'Input must be number'})
+            Notification({type: 'error', message: 'Input Error', desc: 'Input must be number', duration: 2})
         }
     }
 
