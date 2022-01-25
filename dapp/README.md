@@ -10,4 +10,4 @@
 
 ## About the App
 
-It can take a while for operating each methods such as supply and withdraw.
+It can take a while for operating supply and withdraw method.
